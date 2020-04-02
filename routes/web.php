@@ -2,5 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::resource('/', 'MoviesController');
+Route::get('/', 'MoviesController@index');
+Route::resource('movies', 'MoviesController');
+
 
